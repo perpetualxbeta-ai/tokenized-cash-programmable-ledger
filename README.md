@@ -99,7 +99,8 @@ Coverage is about 96% of lines. CI (`.github/workflows/ci.yml`) runs tests, a lo
 invariant run, the simulation (uploading the report as a build artifact) and coverage on
 every push and PR.
 
-See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for the design.
+See [`docs/TEST-PLAN.md`](docs/TEST-PLAN.md) for the full test plan (planned cases, coverage targets and open questions)
+and [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for the design.
 
 ## Background
 
