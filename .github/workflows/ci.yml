@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run compile
+      - run: npm test
+      - name: Longer randomized invariant run
+        run: npm run test:invariants
+      - name: Simulation (fails if any reconciliation check fails)
+        run: npm run sim
+      - uses: actions/upload-artifact@v4
+        with:
+          name: simulation-report
+          path: sim/out/
+      - run: npm run coverage
