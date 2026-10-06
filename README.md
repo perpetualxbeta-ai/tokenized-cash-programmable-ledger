@@ -1,6 +1,7 @@
 # Tokenized Cash & Programmable Ledger (prototype)
 
-+-----------------------+
+```text
+                     +-----------------------+
                      |   Identity Registry   |
                      |  (KYC, Tiers, Roles)  |
                      +-----------+-----------+
@@ -16,7 +17,7 @@
 |  Purpose Bound  |   |    Conditional     |   |   DvP Settlement  |
 |      Money      |   |      Payments      |   |   (Bond vs Cash)  |
 |  (Vouchers/PBM) |   |  (Escrow/Milestone)|   |                   |
-+-----------------+   +--------------------+   +-------------------+              
++-----------------+   +--------------------+   +-------------------+           
 
 
 A simulation prototype of a **tokenized cash ledger** with **programmable payments** on top:
