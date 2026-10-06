@@ -17,7 +17,7 @@
 |      Money      |   |      Payments      |   |   (Bond vs Cash)  |
 |  (Vouchers/PBM) |   |  (Escrow/Milestone)|   |                   |
 +-----------------+   +--------------------+   +-------------------+           
-
+```
 
 ## Layers
 
