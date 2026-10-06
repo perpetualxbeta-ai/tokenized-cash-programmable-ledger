@@ -1,6 +1,7 @@
 # Architecture
 
 ## System Architecture
+
                      +-----------------------+
                      |   Identity Registry   |
                      |  (KYC, Tiers, Roles)  |
