@@ -1,4 +1,23 @@
-# Architecture
+## Architecture
+
+                     +-----------------------+
+                     |   Identity Registry   |
+                     |  (KYC, Tiers, Roles)  |
+                     +-----------+-----------+
+                                 |
+                                 v
++-----------------------------------------------------------------+
+|                         CashToken (tSGD)                        |
+|   (Reserves-backed ERC-20 with freeze/pause & limit checks)     |
++--------+-----------------------+------------------------+-------+
+         |                       |                        |
+         v                       v                        v
++-----------------+   +--------------------+   +-------------------+
+|  Purpose Bound  |   |    Conditional     |   |   DvP Settlement  |
+|      Money      |   |      Payments      |   |   (Bond vs Cash)  |
+|  (Vouchers/PBM) |   |  (Escrow/Milestone)|   |                   |
++-----------------+   +--------------------+   +-------------------+              
+
 
 ## Layers
 
