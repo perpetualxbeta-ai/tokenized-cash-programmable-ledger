@@ -1,5 +1,24 @@
 # Tokenized Cash & Programmable Ledger (prototype)
 
++-----------------------+
+                     |   Identity Registry   |
+                     |  (KYC, Tiers, Roles)  |
+                     +-----------+-----------+
+                                 |
+                                 v
++-----------------------------------------------------------------+
+|                         CashToken (tSGD)                        |
+|   (Reserves-backed ERC-20 with freeze/pause & limit checks)     |
++--------+-----------------------+------------------------+-------+
+         |                       |                        |
+         v                       v                        v
++-----------------+   +--------------------+   +-------------------+
+|  Purpose Bound  |   |    Conditional     |   |   DvP Settlement  |
+|      Money      |   |      Payments      |   |   (Bond vs Cash)  |
+|  (Vouchers/PBM) |   |  (Escrow/Milestone)|   |                   |
++-----------------+   +--------------------+   +-------------------+              
+
+
 A simulation prototype of a **tokenized cash ledger** with **programmable payments** on top:
 
 - **`CashToken`**: a permissioned, fully-backed ERC-20 with 2 decimals (`tSGD`). Issuance can
